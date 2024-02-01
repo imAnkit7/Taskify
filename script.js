@@ -16,7 +16,12 @@ const handleClick=()=>{
         list.appendChild(newEle)
         inputTask.value=""
         newEle.querySelector('i').addEventListener('click',()=>{
-            newEle.remove()
+            let a = confirm("Press a button!");
+            if(a==true){
+                newEle.remove()     
+            }else{
+                
+            }
         })
     }
 }
